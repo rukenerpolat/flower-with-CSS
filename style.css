@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* position: relative; */
+}
+
+.second{
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.leaf{
+    width: 200px;
+    height: 200px;
+    border-radius: 0 100%;
+    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+.one{
+    transform: rotate(180deg);
+}
+.two{
+    transform: rotate(270deg);
+}
+.three{
+    transform: rotate(90deg);
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(51, 139, 147);
+    background-image: radial-gradient( rgb(51, 139, 147), rgb(182, 244, 146));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
